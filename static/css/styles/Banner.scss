@@ -1,0 +1,89 @@
+:root {
+  --mainColor: #E84142;
+  --headerColor: #30c4ffa9;
+  --mainColorLight: #FFF;
+  --secondaryColor: #000;
+  --textColor: #FFF;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--mainColor);
+
+  @media screen and (max-width: 600px) {
+    height: 150vh; /* Adjusted height for better coverage on mobile */
+  }
+}
+
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px; /* Add padding to the entire container */
+}
+
+.page-image {
+  max-width: 20%; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-bottom: 20px; /* Add margin to the bottom of the image */
+  margin-top: 20px;
+}
+
+.text-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+  padding: 0 20px; /* Add padding to the sides of the text */
+}
+
+.text-container h1 {
+  display: block;
+  margin-bottom: 10px; /* Adjust the margin between links */
+}
+
+.text-container a {
+  display: block;
+  margin-bottom: 10px; /* Adjust the margin between links */
+}
+
+.text-container p {
+  display: block;
+  margin-bottom: 10px; /* Adjust the margin between links */
+}
+
+.text-container-footer {
+  margin-top: 40px; /* Adjust the margin as needed */
+  padding: 0 20px; /* Add padding to the sides of the text */
+  font-size: 0.8vh;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .page-image {
+    max-width: 80%; /* Adjust for a larger width on mobile */
+    margin-bottom: 10px; /* Adjust the margin on mobile */
+  }
+
+  .text-container {
+    padding: 0 10px; /* Add mobile-specific padding to the text */
+  }
+  .text-container p {
+    margin-bottom: 20px; /* Adjust the margin between links */
+    padding: 0 20px;
+    line-height: 3vh;
+  }
+}
+
+nav a,
+.text-container a {
+  color: white; /* Set link color to white */
+  text-decoration: underline; /* Add underline */
+}
+
+nav a:hover,
+.text-container a:hover {
+  color: #000; /* Change link color on hover, adjust as needed */
+  text-decoration: none; /* Remove underline on hover, adjust as needed */
+}

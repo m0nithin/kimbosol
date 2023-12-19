@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'dogica';
+  src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'dogica';
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+.overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+
+  .App {
+    text-align: center;
+    font-family: 'dogica';
+    color: #fff;
+  }
+
+  #animatedBackground {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #E84142;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -2;
+  }
+}

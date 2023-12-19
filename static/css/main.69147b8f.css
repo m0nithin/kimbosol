@@ -1,0 +1,136 @@
+@font-face {
+    font-family: dogica;
+    src: url(/static/media/dogica.214cd23097c4c02eb9bd.ttf) format("truetype")
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    font-family: dogica !important;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth
+}
+
+body {
+    overflow: hidden
+}
+
+.overlay {
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+
+.overlay .App {
+    color: #fff;
+    font-family: dogica;
+    text-align: center
+}
+
+.overlay #animatedBackground {
+    background: #e84142;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    z-index: -2
+}
+
+:root {
+    --mainColor: #e84142;
+    --headerColor: #30c4ffa9;
+    --mainColorLight: #fff;
+    --secondaryColor: #000;
+    --textColor: #fff
+}
+
+.banner {
+    background-color: #e84142;
+    background-color: var(--mainColor);
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    text-align: center
+}
+
+@media screen and (max-width:600px) {
+    .banner {
+        height: 150vh
+    }
+}
+
+.image-text-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center
+}
+
+.page-image {
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 20%
+}
+
+.text-container {
+    margin-top: 20px;
+    padding: 0 20px
+}
+
+.text-container a,
+.text-container h1,
+.text-container p {
+    display: block;
+    margin-bottom: 10px
+}
+
+.text-container-footer {
+    font-size: .8vh;
+    margin-top: 40px;
+    padding: 0 20px
+}
+
+@media only screen and (max-width:768px) {
+    .page-image {
+        margin-bottom: 10px;
+        max-width: 80%
+    }
+
+    .text-container {
+        padding: 0 10px
+    }
+
+    .text-container p {
+        line-height: 3vh;
+        margin-bottom: 20px;
+        padding: 0 20px
+    }
+}
+
+.text-container a,
+nav a {
+    color: #fff;
+    text-decoration: underline
+}
+
+.text-container a:hover,
+nav a:hover {
+    color: #000;
+    text-decoration: none
+}
+
+/*# sourceMappingURL=main.69147b8f.css.map*/
